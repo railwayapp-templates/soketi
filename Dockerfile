@@ -1,10 +1,2 @@
-FROM quay.io/soketi/soketi:0.17-16-alpine
-
-ARG DEFAULT_APP_ID
-ENV DEFAULT_APP_ID=$DEFAULT_APP_ID
-
-ARG DEFAULT_APP_KEY
-ENV DEFAULT_APP_KEY=$DEFAULT_APP_KEY
-
-ARG DEFAULT_APP_SECRET
-ENV DEFAULT_APP_SECRET=$DEFAULT_APP_SECRET
+# Railway does not yet support deploying images directly from quay.io, this is a workaround for now
+FROM quay.io/soketi/soketi:1.5.0-16-debian
